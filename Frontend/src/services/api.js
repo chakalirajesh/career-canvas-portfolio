@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://career-canvas-portfolio.onrender.com";
 
 export async function getProjects() {
   const response = await fetch(`${API_BASE_URL}/projects`);
