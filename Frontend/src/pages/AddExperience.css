@@ -1,0 +1,17 @@
+.add-experience-page { min-height:100vh; padding:6rem 4rem 4rem; background:var(--navy); color:var(--white); }
+.add-experience-header { max-width:900px; margin:0 auto 2.5rem; padding-bottom:2rem; display:flex; justify-content:space-between; align-items:flex-end; gap:2rem; border-bottom:1px solid var(--border); }
+.add-experience-header span { color:var(--teal); font-size:.7rem; font-weight:700; letter-spacing:.14em; }
+.add-experience-header h1 { margin:.5rem 0; font-family:"Playfair Display",serif; font-size:3.2rem; }
+.add-experience-header p { color:var(--muted); }
+.add-experience-back { padding:.8rem 1.4rem; border:1px solid rgba(0,212,170,.25); border-radius:10px; background:transparent; color:var(--teal); font-weight:700; cursor:pointer; }
+.add-experience-form { max-width:900px; margin:0 auto; padding:2.5rem; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); }
+.add-experience-group { margin-bottom:1.3rem; }
+.add-experience-group label { display:block; margin-bottom:.5rem; color:var(--muted); font-size:.75rem; font-weight:600; text-transform:uppercase; }
+.add-experience-group input, .add-experience-group textarea, .add-experience-group select { width:100%; padding:.9rem 1rem; border:1px solid var(--border); border-radius:10px; background:rgba(255,255,255,.04); color:var(--white); font-family:"Inter",sans-serif; outline:none; }
+.add-experience-group textarea { min-height:130px; resize:vertical; }
+.add-experience-group input:focus, .add-experience-group textarea:focus, .add-experience-group select:focus { border-color:rgba(0,212,170,.4); box-shadow:0 0 0 3px rgba(0,212,170,.08); }
+.add-experience-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.add-experience-submit { width:100%; padding:1rem; border:none; border-radius:10px; background:var(--teal); color:var(--navy); font-weight:700; cursor:pointer; transition:.25s; }
+.add-experience-submit:hover { background:#00f2c3; transform:translateY(-2px); box-shadow:0 8px 30px var(--teal-glow); }
+.add-experience-message { margin-top:1rem; text-align:center; color:var(--teal); }
+@media(max-width:700px){ .add-experience-page{padding:5rem 1.5rem 3rem} .add-experience-header{align-items:flex-start;flex-direction:column} .add-experience-back{width:100%} .add-experience-row{grid-template-columns:1fr;gap:0} }

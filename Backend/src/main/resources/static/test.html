@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Project API</title>
+</head>
+<body>
+
+<h2>Add Project</h2>
+
+<button onclick="addProject()">Add Project</button>
+
+<script>
+async function addProject() {
+
+    const project = {
+    		
+    		    "name": "Java Full Stack Development",
+    		    "issuer": "Professional Training Program",
+    		    "issueDate": "2026",
+    		    "credentialUrl": "https://drive.google.com/file/d/1XdAbSl6KUyu7FT0eFB01L6qntgHtDka7/view?usp=sharing"
+    		
+    };
+
+    const response = await fetch("/certifications", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(project)
+    });
+
+    const data = await response.json();
+
+    console.log(data);
+    alert(JSON.stringify(data));
+}
+</script>
+
+</body>
+</html>

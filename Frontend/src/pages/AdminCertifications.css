@@ -1,0 +1,27 @@
+.admin-certifications-page { min-height:100vh; padding:6rem 4rem 4rem; background:var(--navy); color:var(--white); }
+.admin-certifications-header { max-width:1200px; margin:0 auto 3rem; padding-bottom:2rem; display:flex; align-items:flex-end; justify-content:space-between; gap:2rem; border-bottom:1px solid var(--border); }
+.admin-certifications-label { color:var(--teal); font-size:.7rem; font-weight:700; letter-spacing:.14em; }
+.admin-certifications-header h1 { margin:.5rem 0; font-family:"Playfair Display",serif; font-size:clamp(2.4rem,5vw,4rem); }
+.admin-certifications-header p { color:var(--muted); }
+.admin-certifications-actions { display:flex; gap:.7rem; flex-wrap:wrap; }
+.admin-certifications-actions button { padding:.8rem 1.25rem; border:1px solid rgba(0,212,170,.25); border-radius:10px; background:transparent; color:var(--teal); font-weight:700; cursor:pointer; transition:.25s; }
+.admin-certifications-actions button.primary { background:var(--teal); color:var(--navy); }
+.admin-certifications-actions button:hover { border-color:var(--teal); transform:translateY(-2px); }
+.admin-certifications-content { max-width:1200px; margin:0 auto; }
+.admin-certifications-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; }
+.admin-certifications-card { padding:2rem; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); position:relative; overflow:hidden; transition:.25s; }
+.admin-certifications-card::before { content:""; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--teal),transparent); }
+.admin-certifications-card:hover { transform:translateY(-5px); border-color:rgba(0,212,170,.35); }
+.admin-certifications-number { color:rgba(0,212,170,.3); font-family:"Playfair Display",serif; font-size:1.7rem; font-weight:900; }
+.admin-certifications-card h2 { margin:.7rem 0 .5rem; font-size:1.35rem; }
+.admin-certifications-card h3 { margin-bottom:.7rem; color:var(--teal); font-size:.95rem; }
+.admin-certifications-card p { color:var(--muted); line-height:1.7; margin-bottom:1rem; }
+.admin-certifications-meta { padding-top:1rem; border-top:1px solid var(--border); color:var(--light); font-size:.82rem; margin-bottom:1.4rem; }
+.admin-certifications-buttons { display:flex; gap:.7rem; }
+.admin-certifications-buttons button { flex:1; padding:.72rem 1rem; border-radius:9px; font-weight:700; cursor:pointer; transition:.25s; }
+.admin-certifications-edit { border:1px solid rgba(0,212,170,.2); background:var(--teal-dim); color:var(--teal); }
+.admin-certifications-edit:hover { background:var(--teal); color:var(--navy); }
+.admin-certifications-delete { border:1px solid rgba(255,80,80,.2); background:rgba(255,80,80,.06); color:#ff7b7b; }
+.admin-certifications-delete:hover { background:#ff7b7b; color:var(--navy); }
+.admin-certifications-status { padding:4rem 1rem; text-align:center; color:var(--muted); }
+@media(max-width:800px){ .admin-certifications-page{padding:5rem 1.5rem 3rem} .admin-certifications-header{align-items:flex-start;flex-direction:column} .admin-certifications-grid{grid-template-columns:1fr} .admin-certifications-actions{width:100%} .admin-certifications-actions button{flex:1} }

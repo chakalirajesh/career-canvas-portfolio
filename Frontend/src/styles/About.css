@@ -1,0 +1,9 @@
+/* ABOUT PAGE */
+.page-about .about-grid{display:grid;grid-template-columns:2fr 1fr;gap:35px;}
+.page-about .about-main{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:40px;}
+.page-about .about-main p{color:var(--light);line-height:2;font-size:1rem;margin-bottom:1rem;}
+.page-about .about-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px;}.page-about .about-tags span{padding:8px 16px;border-radius:30px;background:rgba(0,212,170,.08);border:1px solid rgba(0,212,170,.15);color:var(--teal);font-size:.8rem;}
+.page-about .about-side{display:flex;flex-direction:column;gap:20px;}.page-about .about-info-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:25px;display:flex;align-items:center;gap:20px;transition:.3s;}.page-about .about-info-card:hover{border-color:var(--teal);transform:translateY(-5px);}
+.page-about .info-icon{width:60px;height:60px;border-radius:16px;background:rgba(0,212,170,.08);display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex-shrink:0;}.page-about .about-info-card small{color:var(--muted);display:block;margin-bottom:5px;}.page-about .about-info-card h3{font-size:1.2rem;}
+@media(max-width:960px){.page-about .about-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){.page-about .about-main{padding:25px;}}

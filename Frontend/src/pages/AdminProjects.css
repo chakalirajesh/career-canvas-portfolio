@@ -1,0 +1,254 @@
+.admin-projects-page {
+  min-height: 100vh;
+  padding: 6rem 4rem 4rem;
+  background: var(--navy);
+  color: var(--white);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.admin-projects-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding-bottom: 2rem;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-projects-label {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+
+  color: var(--teal);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.admin-projects-header h1 {
+  margin-bottom: 0.5rem;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+}
+
+.admin-projects-header p {
+  color: var(--muted);
+}
+
+/* Header buttons */
+
+.admin-projects-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-shrink: 0;
+}
+
+.admin-add-button {
+  padding: 0.8rem 1.4rem;
+
+  border: 1px solid rgba(0, 212, 170, 0.25);
+  border-radius: 10px;
+
+  background: var(--teal);
+  color: var(--navy);
+
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.admin-add-button:hover {
+  background: var(--teal2);
+  box-shadow: 0 0 20px var(--teal-glow);
+}
+
+.admin-back-button {
+  padding: 0.8rem 1.4rem;
+
+  background: transparent;
+  border: 1px solid rgba(0, 212, 170, 0.25);
+  border-radius: 10px;
+
+  color: var(--teal);
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.admin-back-button:hover {
+  background: var(--teal-dim);
+  border-color: var(--teal);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.admin-projects-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.admin-project-card {
+  padding: 2rem;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  position: relative;
+  overflow: hidden;
+
+  transition: 0.25s;
+}
+
+.admin-project-card::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 2px;
+
+  background: linear-gradient(90deg, var(--teal), transparent);
+}
+
+.admin-project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 212, 170, 0.35);
+}
+
+.admin-project-number {
+  color: rgba(0, 212, 170, 0.35);
+
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.admin-project-card h2 {
+  margin: 0.8rem 0;
+  font-size: 1.4rem;
+}
+
+.admin-project-card p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.admin-project-tech {
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+
+  border-top: 1px solid var(--border);
+
+  color: var(--teal);
+  font-size: 0.78rem;
+}
+
+/* =========================
+   EDIT / DELETE BUTTONS
+========================= */
+
+.admin-project-actions {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.admin-edit-button,
+.admin-delete-button {
+  flex: 1;
+
+  padding: 0.75rem 1rem;
+
+  border-radius: 9px;
+
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.admin-edit-button {
+  border: 1px solid rgba(0, 212, 170, 0.2);
+  background: var(--teal-dim);
+  color: var(--teal);
+}
+
+.admin-edit-button:hover {
+  background: var(--teal);
+  color: var(--navy);
+}
+
+.admin-delete-button {
+  border: 1px solid rgba(255, 80, 80, 0.2);
+  background: rgba(255, 80, 80, 0.06);
+  color: #ff7b7b;
+}
+
+.admin-delete-button:hover {
+  background: #ff7b7b;
+  color: var(--navy);
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.admin-projects-status {
+  color: var(--muted);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+  .admin-projects-page {
+    padding: 5rem 1.5rem 3rem;
+  }
+
+  .admin-projects-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-projects-header-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .admin-projects-header-actions button {
+    width: 100%;
+  }
+
+  .admin-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

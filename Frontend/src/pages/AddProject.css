@@ -1,0 +1,120 @@
+.add-project-page {
+  min-height: 100vh;
+  padding: 6rem 4rem 4rem;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.add-project-header {
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.add-project-header span {
+  color: var(--teal);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.add-project-header h1 {
+  margin: 0.5rem 0;
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+}
+
+.add-project-header p {
+  color: var(--muted);
+}
+
+.add-project-back {
+  padding: 0.8rem 1.4rem;
+  border: 1px solid rgba(0, 212, 170, 0.25);
+  background: transparent;
+  color: var(--teal);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-project-form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.add-project-group {
+  margin-bottom: 1.3rem;
+}
+
+.add-project-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.add-project-group input,
+.add-project-group textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--white);
+
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+
+.add-project-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.add-project-group input:focus,
+.add-project-group textarea:focus {
+  border-color: rgba(0, 212, 170, 0.4);
+  box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.08);
+}
+
+.add-project-submit {
+  width: 100%;
+  padding: 1rem;
+
+  border: none;
+  border-radius: 10px;
+
+  background: var(--teal);
+  color: var(--navy);
+
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.add-project-submit:hover {
+  background: #00f2c3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--teal-glow);
+}
+
+.add-project-message {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--teal);
+}

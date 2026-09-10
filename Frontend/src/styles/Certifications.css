@@ -1,0 +1,4 @@
+/* CERTIFICATIONS PAGE */
+.page-certifications .certifications-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;}.page-certifications .certification-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;transition:.3s;display:flex;flex-direction:column;align-items:flex-start;}.page-certifications .certification-card:hover{border-color:rgba(0,212,170,.3);transform:translateY(-5px);}.page-certifications .certification-icon{font-size:2.3rem;margin-bottom:1rem;}.page-certifications .certification-card h3{font-size:1.1rem;margin-bottom:1rem;}.page-certifications .certification-card p{color:var(--muted);font-size:.85rem;line-height:1.7;}.page-certifications .certification-card .btn-ghost{margin-top:1.5rem;}
+@media(max-width:960px){.page-certifications .certifications-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){.page-certifications .certification-card{padding:1.5rem;}}

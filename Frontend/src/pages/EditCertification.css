@@ -1,0 +1,17 @@
+.edit-certification-page { min-height:100vh; padding:6rem 4rem 4rem; background:var(--navy); color:var(--white); }
+.edit-certification-header { max-width:900px; margin:0 auto 2.5rem; padding-bottom:2rem; display:flex; justify-content:space-between; align-items:flex-end; gap:2rem; border-bottom:1px solid var(--border); }
+.edit-certification-header span { color:var(--teal); font-size:.7rem; font-weight:700; letter-spacing:.14em; }
+.edit-certification-header h1 { margin:.5rem 0; font-family:"Playfair Display",serif; font-size:3.2rem; }
+.edit-certification-header p { color:var(--muted); }
+.edit-certification-back { padding:.8rem 1.4rem; border:1px solid rgba(0,212,170,.25); border-radius:10px; background:transparent; color:var(--teal); font-weight:700; cursor:pointer; }
+.edit-certification-form { max-width:900px; margin:0 auto; padding:2.5rem; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); }
+.edit-certification-group { margin-bottom:1.3rem; }
+.edit-certification-group label { display:block; margin-bottom:.5rem; color:var(--muted); font-size:.75rem; font-weight:600; text-transform:uppercase; }
+.edit-certification-group input, .edit-certification-group textarea, .edit-certification-group select { width:100%; padding:.9rem 1rem; border:1px solid var(--border); border-radius:10px; background:rgba(255,255,255,.04); color:var(--white); font-family:"Inter",sans-serif; outline:none; }
+.edit-certification-group textarea { min-height:130px; resize:vertical; }
+.edit-certification-group input:focus, .edit-certification-group textarea:focus, .edit-certification-group select:focus { border-color:rgba(0,212,170,.4); box-shadow:0 0 0 3px rgba(0,212,170,.08); }
+.edit-certification-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.edit-certification-submit { width:100%; padding:1rem; border:none; border-radius:10px; background:var(--teal); color:var(--navy); font-weight:700; cursor:pointer; transition:.25s; }
+.edit-certification-submit:hover { background:#00f2c3; transform:translateY(-2px); box-shadow:0 8px 30px var(--teal-glow); }
+.edit-certification-message { margin-top:1rem; text-align:center; color:var(--teal); }
+@media(max-width:700px){ .edit-certification-page{padding:5rem 1.5rem 3rem} .edit-certification-header{align-items:flex-start;flex-direction:column} .edit-certification-back{width:100%} .edit-certification-row{grid-template-columns:1fr;gap:0} }

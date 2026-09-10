@@ -1,0 +1,196 @@
+.admin-dashboard-page {
+  min-height: 100vh;
+  padding: 6rem 4rem 4rem;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.admin-dashboard-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2rem;
+}
+
+.admin-dashboard-label {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+
+  color: var(--teal);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.admin-dashboard-header h1 {
+  margin: 0 0 0.5rem;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.1;
+}
+
+.admin-dashboard-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.admin-logout-button {
+  border: 1px solid rgba(0, 212, 170, 0.25);
+  background: transparent;
+  color: var(--teal);
+
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.admin-logout-button:hover {
+  background: var(--teal-dim);
+  border-color: var(--teal);
+}
+
+.admin-dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.admin-dashboard-card {
+  position: relative;
+  overflow: hidden;
+
+  padding: 2rem;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  transition:
+    transform 0.25s,
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+
+.admin-dashboard-card::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 2px;
+
+  background: linear-gradient(90deg, var(--teal), transparent);
+}
+
+.admin-dashboard-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 212, 170, 0.35);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.28),
+    0 0 30px rgba(0, 212, 170, 0.07);
+}
+
+.admin-card-number {
+  display: block;
+  margin-bottom: 1rem;
+
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 900;
+
+  color: rgba(0, 212, 170, 0.2);
+}
+
+.admin-dashboard-card h2 {
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+}
+
+.admin-dashboard-card p {
+  min-height: 54px;
+  margin-bottom: 1.5rem;
+
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.admin-dashboard-card button {
+  width: 100%;
+
+  padding: 0.8rem 1rem;
+
+  border: 1px solid rgba(0, 212, 170, 0.2);
+  border-radius: 9px;
+
+  background: var(--teal-dim);
+  color: var(--teal);
+
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.admin-dashboard-card button:hover {
+  background: var(--teal);
+  color: var(--navy);
+}
+
+@media (max-width: 960px) {
+  .admin-dashboard-page {
+    padding: 5rem 1.5rem 3rem;
+  }
+
+  .admin-dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-logout-button {
+    width: 100%;
+  }
+}
+.admin-card-actions {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+.admin-card-actions button + button {
+  background: transparent;
+  border: 1px solid rgba(0, 212, 170, 0.25);
+  color: var(--teal);
+}
+
+.admin-card-actions button + button:hover {
+  background: var(--teal);
+  color: var(--navy);
+}

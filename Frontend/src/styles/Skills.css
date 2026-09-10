@@ -1,0 +1,5 @@
+/* SKILLS PAGE */
+.page-skills .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;}.page-skills .skill-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:2.5rem;position:relative;overflow:hidden;transition:border-color .3s,transform .3s,box-shadow .3s;}
+.page-skills .skill-card::after{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),transparent);}.page-skills .skill-card:hover{border-color:rgba(0,212,170,.35);transform:translateY(-5px);box-shadow:0 20px 60px rgba(0,0,0,.3);}.page-skills .skill-card h3{font-size:1.3rem;font-weight:700;margin-bottom:.6rem;}.page-skills .skill-card p{font-size:.88rem;color:var(--muted);line-height:1.75;}
+@media(max-width:960px){.page-skills .skills-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){.page-skills .skill-card{padding:1.5rem;}}
