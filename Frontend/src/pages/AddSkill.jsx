@@ -25,12 +25,10 @@ function AddSkill() {
         }),
       });
 
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.message || "Failed to add skill");
-      }
-
+     if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(errorText || "Failed to add skill");
+    }
       setMessage("Skill added successfully.");
 
       setName("");
