@@ -22,7 +22,7 @@ function AddExperience() {
     setMessage("");
 
     try {
-      const response = await fetch("http://localhost:8080/experience", {
+      const response = await fetch("https://career-canvas-portfolio.onrender.com/experience", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
