@@ -7,7 +7,7 @@ function AdminMessages() {
 
   const loadMessages = async () => {
     try {
-      const response = await fetch("http://localhost:8080/contact", {
+      const response = await fetch("https://career-canvas-portfolio.onrender.com/contact", {
         credentials: "include",
       });
 
