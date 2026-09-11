@@ -7,7 +7,7 @@ function AdminProjects() {
 
   const loadProjects = async () => {
     try {
-      const response = await fetch("http://localhost:8080/projects");
+      const response = await fetch("https://career-canvas-portfolio.onrender.com/projects");
 
       if (!response.ok) {
         throw new Error("Failed to load projects");
