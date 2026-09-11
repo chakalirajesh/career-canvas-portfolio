@@ -7,7 +7,7 @@ function AdminEducation() {
 
   const loadEducation = async () => {
     try {
-      const response = await fetch("http://localhost:8080/education");
+      const response = await fetch("https://career-canvas-portfolio.onrender.com/education");
 
       if (!response.ok) {
         throw new Error("Failed to load education");
