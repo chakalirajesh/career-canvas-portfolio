@@ -20,7 +20,7 @@ function EditEducation({ educationId }) {
     const loadEducation = async () => {
       try {
         const response = await fetch(
-          `https://career-canvas-portfolio.onrender.com/${educationId}`,
+          `https://career-canvas-portfolio.onrender.com/Education${educationId}`,
           {
             credentials: "include",
           }
