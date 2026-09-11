@@ -14,7 +14,7 @@ function AddEducation() {
     setMessage("");
 
     try {
-      const response = await fetch("http://localhost:8080/education", {
+      const response = await fetch("https://career-canvas-portfolio.onrender.com/education", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
