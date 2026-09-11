@@ -18,7 +18,7 @@ function EditSkill({ skillId }) {
     const loadSkill = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8080/skills/${skillId}`,
+          `https://career-canvas-portfolio.onrender.com/skills/${skillId}`,
           {
             credentials: "include",
           },
